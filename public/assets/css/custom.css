@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar-wrapper {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#page-content-wrapper {
+    flex: 1;
+    padding: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #6c757d;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #495057;
+}
+
+.notification {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #343a40;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link:hover,
+.sidebar-nav .sidebar-item .sidebar-link.active {
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
