@@ -11,8 +11,14 @@ class TamuController extends Controller
 {
     public function index()
     {
-        return view('buku-tamu.home');
+        $totalPengunjung = FormTamu::count();
+        $totalInstansi = FormTamu::where('jabatan', 'Instansi')->count();
+        $totalUmum = FormTamu::whereRaw('LOWER(jabatan) NOT IN (?, ?)', ['instansi', 'mahasiswa'])->count();
+        $totalPelajarMahasiswa = FormTamu::whereRaw('LOWER(jabatan) = ?', ['mahasiswa'])->count();
+    
+        return view('buku-tamu.home', compact('totalPengunjung', 'totalInstansi', 'totalUmum', 'totalPelajarMahasiswa'));
     }
+    
     public function tamu()
     {
         return view('buku-tamu.index');

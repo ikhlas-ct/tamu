@@ -1,9 +1,10 @@
-<!-- resources/views/dashboard.blade.php -->
-@extends('layout.app')
+@extends('layout.master')
+
+@section('title', 'Page Title')
 
 @section('content')
-<div class="container">
-    <h1>Dashboard</h1>
-    <!-- Your dashboard content here -->
-</div>
+    <!-- Your content here -->
+    <div class="container">
+        <h1>Welcome to the Dashboard</h1>
+    </div>
 @endsection

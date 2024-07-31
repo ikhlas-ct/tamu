@@ -24,7 +24,7 @@
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/css/style1.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: eNno
@@ -144,33 +144,27 @@
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Total Pengujung</p>
+          <div class="row counters">
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-purecounter-start="0" data-purecounter-end="{{ $totalPengunjung }}" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Total Pengunjung</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-purecounter-start="0" data-purecounter-end="{{ $totalInstansi }}" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Instansi</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-purecounter-start="0" data-purecounter-end="{{ $totalUmum }}" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Umum</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-purecounter-start="0" data-purecounter-end="{{ $totalPelajarMahasiswa }}" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Pelajar/Mahasiswa</p>
+              </div>
           </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Instansi</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Umum</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Pelajar/Mahasiswa</p>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Counts Section -->
+  </section>
+  
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
@@ -352,7 +346,7 @@
   <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{ asset('assets/js/main.js') }}"></script>
+  <script src="{{ asset('assets/js/main1.js') }}"></script>
 
 </body>
 

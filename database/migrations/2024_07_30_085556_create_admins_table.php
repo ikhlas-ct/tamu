@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nama')->nullable();
             $table->string('alamat')->nullable();
             $table->string('no_hp')->nullable();
+            $table->string('gambar')->nullable();
             $table->string('username')->unique();
             $table->string('password');
             $table->timestamps();
